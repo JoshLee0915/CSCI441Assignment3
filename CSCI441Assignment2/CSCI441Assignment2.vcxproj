@@ -123,17 +123,26 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="testFrgtShader.glsl" />
+    <None Include="testTriVertexShader.glsl" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="GameModels.cpp" />
+    <ClCompile Include="main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Maze.cpp" />
     <ClCompile Include="Maze3d.cpp" />
     <ClCompile Include="MazeNode.cpp" />
+    <ClCompile Include="OpenGLShaderLoader.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GameModels.h" />
     <ClInclude Include="Maze.h" />
     <ClInclude Include="Maze3d.h" />
     <ClInclude Include="MazeNode.h" />
+    <ClInclude Include="OpenGLShaderLoader.h" />
+    <ClInclude Include="Vertex.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="testVrtxShader.glsl" />

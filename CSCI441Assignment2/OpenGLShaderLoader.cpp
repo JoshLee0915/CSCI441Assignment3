@@ -1,6 +1,7 @@
 #include "OpenGLShaderLoader.h"
+#include <fstream>
 
-
+using std::ifstream;
 
 OpenGLShaderLoader::OpenGLShaderLoader()
 {}
@@ -8,6 +9,13 @@ OpenGLShaderLoader::OpenGLShaderLoader()
 
 OpenGLShaderLoader::~OpenGLShaderLoader()
 {}
+
+OpenGLShaderLoader& OpenGLShaderLoader::getInstance()
+{
+	static OpenGLShaderLoader instance;
+
+	return instance;
+}
 
 GLuint OpenGLShaderLoader::createProgram(string vertexShaderFile, string fragmentShaderFile)
 {
@@ -27,7 +35,7 @@ GLuint OpenGLShaderLoader::createProgram(string vertexShaderFile, string fragmen
 	glAttachShader(program, frgtShader);
 	glLinkProgram(program);
 
-	// check if and error occured
+	/*ERROR CHECK*/
 	glGetProgramiv(program, GL_LINK_STATUS, &result);
 	if (result == GL_FALSE)
 	{
@@ -41,8 +49,14 @@ GLuint OpenGLShaderLoader::createProgram(string vertexShaderFile, string fragmen
 
 		throw exception(err.c_str());
 	}
+	/*END ERROR CHECK*/
 
 	return program;
+}
+
+void OpenGLShaderLoader::deleteProgram(GLuint programId)
+{
+	glDeleteProgram(programId);
 }
 
 string OpenGLShaderLoader::loadShader(string fileName)
@@ -57,8 +71,6 @@ string OpenGLShaderLoader::loadShader(string fileName)
 	// set the string to be the size of the file
 	fileStream.seekg(0, std::ios::end);
 	shaderCode.resize((unsigned int)fileStream.tellg());
-
-	// read in the file
 	fileStream.seekg(0, std::ios::beg);
 	fileStream.read(&shaderCode[0], shaderCode.size());
 	fileStream.close();
@@ -75,6 +87,8 @@ GLuint OpenGLShaderLoader::createShader(GLenum shaderType, string src, string sh
 
 	glShaderSource(shader, 1, &shaderCode, &size);
 	glCompileShader(shader);
+
+	/*ERROR CHECK*/
 	glGetShaderiv(shader, GL_COMPILE_STATUS, &result);
 
 	if (result == GL_FALSE)
@@ -89,6 +103,7 @@ GLuint OpenGLShaderLoader::createShader(GLenum shaderType, string src, string sh
 
 		throw exception(err.c_str());
 	}
+	/*END ERROR CHECK*/
 
 	return shader;
 }
