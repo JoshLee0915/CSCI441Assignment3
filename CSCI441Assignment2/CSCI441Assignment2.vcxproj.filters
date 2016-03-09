@@ -25,6 +25,12 @@
     <None Include="testTriVertexShader.glsl">
       <Filter>Shaders</Filter>
     </None>
+    <None Include="passThroughFrgtShader.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="SquareVertexShader.glsl">
+      <Filter>Shaders</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

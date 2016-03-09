@@ -20,10 +20,10 @@ void renderScene()
 	glUseProgram(progId);
 
 	// square test
-	/*glDrawArrays(GL_QUADS, 0, 4);*/
+	glDrawArrays(GL_QUADS, 0, 24);
 
 	// tutorial draw
-	glDrawArrays(GL_TRIANGLES, 0, 3);
+	/*glDrawArrays(GL_TRIANGLES, 0, 3);*/
 
 	glutSwapBuffers();
 }
@@ -57,10 +57,10 @@ void init()
 		// load the shaders
 
 		// square test
-		/*progId = OpenGLShaderLoader::getInstance().createProgram("testVrtxShader.glsl", "testFrgtShader.glsl");*/
+		progId = OpenGLShaderLoader::getInstance().createProgram("SquareVertexShader.glsl", "passThroughFrgtShader.glsl");
 
 		// tutorial
-		progId = OpenGLShaderLoader::getInstance().createProgram("testTriVertexShader.glsl", "testFrgtShader.glsl");
+		//progId = OpenGLShaderLoader::getInstance().createProgram("testTriVertexShader.glsl", "testFrgtShader.glsl");
 	}
 	catch (exception& e)
 	{
