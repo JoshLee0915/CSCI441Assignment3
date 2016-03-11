@@ -10,14 +10,14 @@ using std::string;
 class Maze
 {
 protected:
-	int width, height;
+	int width, height, trapChance;
 	MazeNode* root;
 
 public:
 	int getMazeWidth() const;
 	int getMazeHeight() const;
 
-	Maze(int width, int height, bool failSafe = true);
+	Maze(int width, int height, int trapChance, bool failSafe = true);
 	virtual ~Maze();
 
 	string dispayMaze();

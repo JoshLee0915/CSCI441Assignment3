@@ -83,8 +83,9 @@ GLuint OpenGLShaderLoader::createShader(GLenum shaderType, string src, string sh
 	int result = 0;
 	const int size = src.size();
 	const char* shaderCode = src.c_str();
-	GLuint shader = glCreateShader(shaderType);
 
+	GLuint shader = glCreateShader(shaderType);
+	
 	glShaderSource(shader, 1, &shaderCode, &size);
 	glCompileShader(shader);
 

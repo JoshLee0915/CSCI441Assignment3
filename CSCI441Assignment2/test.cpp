@@ -1,5 +1,8 @@
 #include <iostream>
 #include <exception>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 #include "OpenGLShaderLoader.h"
 #include "GameModels.h"
 
@@ -16,8 +19,17 @@ void renderScene()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	glBindVertexArray(gameModles->getModel("triangle1"));
+	//glBindVertexArray(gameModles->getModel("triangle1"));
 	glUseProgram(progId);
+
+	GLuint transUni = glGetUniformLocation(progId, "trans");
+	GLuint scaleUni = glGetUniformLocation(progId, "scale");
+	GLuint viewUni = glGetUniformLocation(progId, "viewMatrix");
+
+	glUniformMatrix4fv(scaleUni, 1, GL_FALSE, glm::value_ptr(glm::scale(glm::mat4(), glm::vec3(0.5, 0.1, 0.5))));
+	glUniformMatrix4fv(transUni, 1, GL_FALSE, glm::value_ptr(glm::translate(glm::mat4(), glm::vec3(0.5, 0.1, 0.5))));
+	glUniformMatrix4fv(viewUni, 1, GL_FALSE, glm::value_ptr(glm::lookAt(glm::vec3(-0.5, 0.3, 0), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0, 0, 1))));
+	//glUniformMatrix4fv(viewUni, 1, GL_FALSE, glm::value_ptr(glm::mat4()));
 
 	// square test
 	glDrawArrays(GL_QUADS, 0, 24);

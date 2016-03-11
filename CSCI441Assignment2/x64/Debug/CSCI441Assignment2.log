@@ -1,46 +1,26 @@
-﻿Build started 3/9/2016 8:38:45 AM.
-     1>Project "C:\Users\PTTN40\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\CSCI441Assignment2\CSCI441Assignment2.vcxproj" on node 2 (Build target(s)).
+﻿Build started 3/10/2016 11:16:30 PM.
+     1>Project "F:\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\CSCI441Assignment2\CSCI441Assignment2.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\PTTN40\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\packages\glm.0.9.7.1\build\native\../..//build/native/include/" /I"C:\Users\PTTN40\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\packages\nupengl.core.0.1.0.1\build\native\../..//build/native/include/" /I..\AbstractNodeLib /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt GameModels.cpp Maze.cpp Maze3d.cpp MazeNode.cpp OpenGLShaderLoader.cpp
-         OpenGLShaderLoader.cpp
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\openglshaderloader.cpp(84): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\openglshaderloader.cpp(84): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
-         MazeNode.cpp
-         Maze3d.cpp
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(26): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(27): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(53): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(54): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(55): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(56): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(67): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(68): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(76): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(77): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(81): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(82): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(88): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.cpp(89): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-         Maze.cpp
-         GameModels.cpp
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\gamemodels.cpp(14): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
-     1>c:\users\pttn40\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\gamemodels.cpp(55): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
-         Generating Code...
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\PTTN40\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\packages\glm.0.9.7.1\build\native\../..//build/native/include/" /I"C:\Users\PTTN40\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\packages\nupengl.core.0.1.0.1\build\native\../..//build/native/include/" /I..\AbstractNodeLib /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt test.cpp
-         test.cpp
+         E:\Windows\Programs\IDE\VS2015\VC\bin\x86_amd64\CL.exe /c /I"F:\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\packages\glm.0.9.7.1\build\native\../..//build/native/include/" /I"F:\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\packages\nupengl.core.0.1.0.1\build\native\../..//build/native/include/" /I..\AbstractNodeLib /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp
+         main.cpp
+     1>f:\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.h(21): warning C4305: 'initializing': truncation from 'double' to 'const GLfloat'
+     1>f:\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\maze3d.h(22): warning C4305: 'initializing': truncation from 'double' to 'const GLfloat'
+     1>f:\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\main.cpp(141): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+     1>f:\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\main.cpp(194): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\main.cpp(237): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+     1>f:\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\main.cpp(238): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+     1>f:\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\main.cpp(251): warning C4305: 'initializing': truncation from 'double' to 'float'
+     1>f:\documents\visual studio 2015\projects\csci441assignment3\csci441assignment2\main.cpp(293): warning C4305: '=': truncation from 'double' to 'float'
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\PTTN40\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\x64\Debug\CSCI441_Assignment3.exe" /INCREMENTAL /NOLOGO "C:\Users\PTTN40\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\packages\nupengl.core.0.1.0.1\build\native\../..//build/native/lib/x64\glew32.lib" "C:\Users\PTTN40\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\packages\nupengl.core.0.1.0.1\build\native\../..//build/native/lib/x64\glfw3dll.lib" "C:\Users\PTTN40\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\packages\nupengl.core.0.1.0.1\build\native\../..//build/native/lib/x64\freeglut.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\PTTN40\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\x64\Debug\CSCI441_Assignment3.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\PTTN40\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\x64\Debug\CSCI441_Assignment3.lib" /MACHINE:X64 x64\Debug\GameModels.obj
+         E:\Windows\Programs\IDE\VS2015\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\x64\Debug\CSCI441_Assignment3.exe" /INCREMENTAL /NOLOGO "F:\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\packages\nupengl.core.0.1.0.1\build\native\../..//build/native/lib/x64\glew32.lib" "F:\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\packages\nupengl.core.0.1.0.1\build\native\../..//build/native/lib/x64\glfw3dll.lib" "F:\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\packages\nupengl.core.0.1.0.1\build\native\../..//build/native/lib/x64\freeglut.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"F:\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\x64\Debug\CSCI441_Assignment3.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\x64\Debug\CSCI441_Assignment3.lib" /MACHINE:X64 x64\Debug\GameModels.obj
          x64\Debug\Maze.obj
          x64\Debug\Maze3d.obj
          x64\Debug\MazeNode.obj
          x64\Debug\OpenGLShaderLoader.obj
-         x64\Debug\test.obj
-         LINK : C:\Users\PTTN40\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\x64\Debug\CSCI441_Assignment3.exe not found or not built by the last incremental link; performing full link
-         CSCI441Assignment2.vcxproj -> C:\Users\PTTN40\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\x64\Debug\CSCI441_Assignment3.exe
-     1>Done Building Project "C:\Users\PTTN40\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\CSCI441Assignment2\CSCI441Assignment2.vcxproj" (Build target(s)).
+         x64\Debug\main.obj
+         CSCI441Assignment2.vcxproj -> F:\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\x64\Debug\CSCI441_Assignment3.exe
+     1>Done Building Project "F:\Documents\Visual Studio 2015\Projects\CSCI441Assignment3\CSCI441Assignment2\CSCI441Assignment2.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:42.71
+Time Elapsed 00:00:01.02

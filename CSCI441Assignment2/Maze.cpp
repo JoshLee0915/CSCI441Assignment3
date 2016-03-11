@@ -10,7 +10,7 @@ int Maze::getMazeHeight() const
 	return height;
 }
 
-Maze::Maze(int width, int height, bool failSafe)
+Maze::Maze(int width, int height, int trapChance, bool failSafe)
 {
 	if (failSafe && (width*height) > 8649)
 		throw std::exception("[ERR]Stack overflow possible at this size.\nKeep total nodes below 8649");
@@ -18,6 +18,7 @@ Maze::Maze(int width, int height, bool failSafe)
 	this->width = width;
 	this->height = height;
 	this->root = new MazeNode();	//default maze node
+	this->trapChance = trapChance;
 
 	buildMaze();
 }
@@ -195,8 +196,9 @@ void Maze::buildCell(MazeNode & node, string * maze)
 	// set the current node as visited
 	node.setVisited();
 
-	// clear the center
-	maze[yCenter][xCenter] = ' ';
+	// clear the center or set it as traped
+	int trapProb = rand()%100;
+	maze[yCenter][xCenter] = trapProb < trapChance ? 'T' : ' ';
 
 	// draw the cell
 	for (int index = 0; index < node.getNumOfConnections(); index++)
